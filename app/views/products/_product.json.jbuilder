@@ -2,6 +2,7 @@ json.id product.id
 json.name product.name
 json.price product.price
 json.price_discounted product.price_discounted
+json.tax product.tax
 json.image_url product.image_url
 json.description product.description
 json.created_at product.created_at

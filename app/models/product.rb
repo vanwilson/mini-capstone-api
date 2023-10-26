@@ -6,4 +6,8 @@ class Product < ApplicationRecord
       false
     end
   end
+
+  def tax
+    price * 1.09 - price
+  end
 end
