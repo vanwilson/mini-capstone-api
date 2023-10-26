@@ -39,12 +39,12 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     end
   end
 
-  test "price_discounted" do
+  test "is_discounted?" do
     product = Product.new(price: 11)
-    assert_equal false, product.price_discounted
+    assert_equal false, product.is_discounted?
 
     product = Product.new(price: 1)
-    assert_equal true, product.price_discounted
+    assert_equal true, product.is_discounted?
   end
 
   test "tax" do
