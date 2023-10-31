@@ -1,4 +1,4 @@
-json.id images.id
-json.url images.url
-json.created_at images.created_at
-json.updated_at images.updated_at
+json.id image.id
+json.url image.url
+json.created_at image.created_at
+json.updated_at image.updated_at
