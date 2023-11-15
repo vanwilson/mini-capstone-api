@@ -30,4 +30,5 @@ class Product < ApplicationRecord
   #   Image.where(product_id: id)
   # end
   has_many :images
+  has_many :orders
 end
