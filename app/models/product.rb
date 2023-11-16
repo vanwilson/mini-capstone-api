@@ -11,11 +11,7 @@ class Product < ApplicationRecord
   # validates :image_url, format: { with: %r{.(gif|jpg|png)\Z}i, message: "must be a URL for GIF, JPG or PNG image." }
 
   def is_discounted?
-    if price <= 10
-      true
-    else
-      false
-    end
+    price <= 10
   end
 
   def tax

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  get "/products", controller: "products", action: "all_products"
-  get "/products/:id", controller: "products", action: "one_product"
+  get "/products", controller: "products", action: "index"
+  get "/products/:id", controller: "products", action: "show"
   post "/products/new", controller: "products", action: "create"
   patch "/products/:id" => "products#update"
   delete "/products/:id" => "products#destroy"
