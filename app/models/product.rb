@@ -27,4 +27,5 @@ class Product < ApplicationRecord
   # end
   has_many :images
   has_many :orders
+  has_many :category_products
 end
